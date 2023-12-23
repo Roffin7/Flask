@@ -1,35 +1,67 @@
-body, html {
+body {
     margin: 0;
-    font-family: sans-serif;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
 }
 
-.content {
-    margin: 0 auto;
-    width: 400px;
+.calculator-container,
+.result-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-table, td, th {
-    border: 1px solid #aaa;
-}
-
-table {
-    border-collapse: collapse;
+.calculator,
+.result {
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 400px;
     width: 100%;
 }
 
-th {
-    height: 30px;
-}
-
-td {
+h1 {
+    color: #327a81;
     text-align: center;
-    padding: 5px;
+    margin-bottom: 20px;
 }
 
-.form {
-    margin-top: 20px;
+.calculator-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#content {
-    width: 70%;
+label {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+select,
+input[type="text"],
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #327a81;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #285e66;
+}
+.r1
+{
+    margin-left: 60px;
 }

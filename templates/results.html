@@ -1,18 +1,20 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Review Page</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-      <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculation Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 </head>
-<body>
-  <div class="table-users">
-   <div class="header">Calculation Result</div>
 
-      {{result}}
-</div>
+<body>
+    <div class="result-container">
+        <div class="result" >
+            <h1>Calculation Result</h1>
+            <div class="r1">{{result}}</div>
+        </div>
+    </div>
 </body>
+
 </html>
